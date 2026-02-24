@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Souhan Fernandez | Portfolio TSSR</title>
+    <style>
+        /* Design Global - Thème Dark Tech */
+        body { font-family: 'Segoe UI', system-ui, sans-serif; background-color: #0d1117; color: #c9d1d9; margin: 0; padding: 0; line-height: 1.6; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 20px; }
+        
+        /* En-tête */
+        header { background-color: #161b22; padding: 60px 20px; text-align: center; border-bottom: 2px solid #2f81f7; }
+        header h1 { margin: 0; font-size: 2.8em; color: #c9d1d9; }
+        header p { font-size: 1.2em; color: #8b949e; max-width: 800px; margin: 15px auto; }
+        
+        /* Titres de section */
+        h2 { color: #58a6ff; border-bottom: 1px solid #30363d; padding-bottom: 10px; margin-top: 50px; font-weight: 600; font-size: 1.8em; }
+        
+        /* Mise en page Grille pour les Projets */
+        .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px; margin-top: 30px; }
+        
+        /* Cartes (Projets et Méthodologie) */
+        .card { background-color: #161b22; padding: 25px; border-radius: 10px; border: 1px solid #30363d; transition: transform 0.2s, border-color 0.2s; }
+        .card:hover { transform: translateY(-5px); border-color: #58a6ff; box-shadow: 0 8px 24px rgba(0,0,0,0.2); }
+        .card h3 { margin-top: 0; color: #58a6ff; font-size: 1.4em; }
+        .card ul { padding-left: 20px; color: #8b949e; }
+        .card li { margin-bottom: 8px; }
+        .card strong { color: #c9d1d9; }
+        
+        /* Boutons */
+        .btn { display: inline-block; background-color: #238636; color: white; padding: 12px 20px; text-decoration: none; border-radius: 6px; margin-top: 15px; font-weight: bold; transition: background-color 0.2s; }
+        .btn:hover { background-color: #2ea043; }
+
+        /* Tags Techniques */
+        .tech-tags span { display: inline-block; background-color: #21262d; border: 1px solid #30363d; padding: 5px 12px; border-radius: 15px; font-size: 0.85em; margin: 5px 5px 0 0; color: #8b949e; }
+        
+        /* Pied de page */
+        footer { text-align: center; padding: 40px; margin-top: 60px; background-color: #161b22; border-top: 1px solid #30363d; }
+        footer a { color: #58a6ff; text-decoration: none; margin: 0 15px; font-weight: bold; }
+        footer a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Portfolio Professionnel TSSR</h1>
+        <p>Bienvenue sur mon espace centralisant mon <strong>Dossier de Synthèse de Pratique Professionnelle (DSPP)</strong> pour l'obtention du titre Technicien Supérieur Systèmes et Réseaux (Session 2024).</p>
+        <p style="font-size: 1em;">Conception, déploiement et maintenance d'infrastructures informatiques complexes.</p>
+    </header>
+
+    <div class="container">
+
+        <section>
+            <h2>Mon Parcours & Profil</h2>
+            <p>Basé à Marseille, je suis titulaire d'un <strong>BTS Systèmes Numériques</strong> et d'un <strong>Titre Professionnel TSSR</strong>. Passionné par l'infrastructure et la cybersécurité, j'ai consolidé mes compétences techniques au travers d'expériences significatives, notamment en milieu hospitalier où la continuité de service est critique.</p>
+            
+            <div class="card" style="margin-top: 20px;">
+                <h3 style="font-size: 1.2em; color: #c9d1d9;">Expériences Professionnelles & Certifications</h3>
+                <ul>
+                    <li><strong>Technicien Systèmes et Réseaux (2024)</strong> - Centre Hospitalier du Pays d'Aix : Déploiement de postes Windows 11 via SCCM, migration de switchs HP vers Aruba, support utilisateurs et rédaction technique.</li>
+                    <li><strong>Technicien Assistance Informatique (2020-2021)</strong> - Centre Hospitalier Edmond Garcin : Support de premier niveau et gestion de parc.</li>
+                    <li><strong>Certifications :</strong> Google Cybersecurity Professional Certificate, Google IT Support Professional Certificate.</li>
+                </ul>
+                <p style="font-style: italic; color: #8b949e; margin-bottom: 0; padding-top: 10px; border-top: 1px solid #30363d;">"Apprendre, pratiquer, documenter et progresser continuellement."</p>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Projets Majeurs Documentés</h2>
+            <div class="grid-container">
+                
+                <div class="card">
+                    <h3>Infrastructure Windows & Services Critiques</h3>
+                    <p>Mise en place d'un domaine racine <code>tssr-vm.tech</code> hautement disponible.</p>
+                    <ul>
+                        <li><strong>Gestion des Identités :</strong> Architecture Active Directory basée sur l'organigramme métier.</li>
+                        <li><strong>Continuité :</strong> Cluster de basculement DHCP (Failover) et sécurisation PKI.</li>
+                        <li><strong>Déploiement :</strong> Industrialisation du parc via WDS et MDT.</li>
+                    </ul>
+                    <a href="https://github.com/Souhan-tech13/Windows-Server-2022-Infra" target="_blank" class="btn">Voir le code & configurations</a>
+                </div>
+
+                <div class="card">
+                    <h3>Sécurisation & Accès Distant (pfSense)</h3>
+                    <p>Mise en œuvre d'une passerelle de sécurité pour le travail nomade via pfSense 2.7.2.</p>
+                    <ul>
+                        <li><strong>Tunneling SSL :</strong> Configuration VPN Client-to-Site (OpenVPN).</li>
+                        <li><strong>Sécurité PKI :</strong> Authentification forte par certificats (CA-Infomatic-VPN).</li>
+                        <li><strong>Filtrage :</strong> Règles de pare-feu strictes (UDP 1194, RDP sécurisé 3389).</li>
+                    </ul>
+                    <a href="https://github.com/Souhan-tech13/PfSense-Secure-VPN-Access" target="_blank" class="btn">Voir l'architecture sécurité</a>
+                </div>
+
+                <div class="card">
+                    <h3>Architecture Réseau Cisco</h3>
+                    <p>Conception d'une infrastructure réseau locale et WAN segmentée et sécurisée.</p>
+                    <ul>
+                        <li><strong>Segmentation :</strong> Création et routage inter-VLAN (Router-on-a-stick / SVI L3).</li>
+                        <li><strong>Services :</strong> Configuration NAT/PAT Overload et listes de contrôle d'accès (ACL).</li>
+                        <li><strong>Sécurité :</strong> Hardening des switchs (SSH v2, Port Security).</li>
+                    </ul>
+                    <a href="https://github.com/Souhan-tech13/Cisco-Network-Architecture" target="_blank" class="btn">Voir la topologie & labs</a>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>Stack Technique & Méthodologie Professionnelle</h2>
+            <div class="grid-container">
+                
+                <div class="card">
+                    <h3>Stack Technique</h3>
+                    <div class="tech-tags">
+                        <span>Windows Server 2022</span>
+                        <span>Linux (Debian/Ubuntu)</span>
+                        <span>Active Directory</span>
+                        <span>pfSense (ZFS)</span>
+                        <span>Cisco IOS / Aruba</span>
+                        <span>OpenVPN</span>
+                        <span>MDT / WDS / SCCM</span>
+                        <span>PowerShell</span>
+                        <span>Proxmox / VMware</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Cycle de vie d'un projet IT</h3>
+                    <p>Maîtrise de la gestion de projet de bout en bout :</p>
+                    <ul>
+                        <li><strong>Audit & Analyse :</strong> Traduction des besoins en contraintes techniques.</li>
+                        <li><strong>Design :</strong> Réalisation de schémas de topologie physique et logique.</li>
+                        <li><strong>Implémentation :</strong> Configuration pas-à-pas documentée.</li>
+                        <li><strong>Validation :</strong> Tests de connectivité et vérification des logs.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>Auteur : <strong>Souhan Fernandez</strong> - Session TSSR 2024</p>
+        <p style="margin-top: 15px;">
+            <a href="https://linkedin.com/in/souhan-fernandez-9a930429a" target="_blank">Profil LinkedIn</a> | 
+            <a href="mailto:souhanfernandez@gmail.com">Contact Email</a> | 
+            <a href="https://github.com/Souhan-tech13" target="_blank">Profil GitHub</a>
+        </p>
+    </footer>
+
+</body>
+</html>
