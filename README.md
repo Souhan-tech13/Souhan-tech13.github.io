@@ -43,6 +43,6 @@ Ce portfolio démontre ma maîtrise du cycle de vie d'un projet IT :
 
 ## Contact
 Pour toute opportunité ou échange technique :
-- **LinkedIn :** [Souhan Fernandez](https://linkedin.com/in/souhan-fernandez-9a930429a)
+- **LinkedIn :** [Souhan Fernandez](https://linkedin.com/in/souhan-fernandez)
 ---
 **Auteur :** Souhan Fernandez - *Session TSSR 2024*
